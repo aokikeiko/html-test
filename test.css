@@ -1,0 +1,58 @@
+body {
+    font-family: "游ゴシック", "ヒラギノ角ゴ ProN";
+    background: #00FFFF;
+}
+
+h1 {
+    background: #FFF0F5;
+    color: Black;
+    text-align: center;
+}
+
+/* 新商品の案内ページ（H1） */
+#new1 {
+  position: relative;
+  padding: 0.6em;
+  background: #7db4e6;
+  color: #fff; 
+  margin-bottom: 1.5em;
+  text-align: left;
+}
+#new1:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 30px;
+  border: 15px solid transparent;
+  border-top: 15px solid #7db4e6;
+  width: 0;
+  height: 0;
+}
+
+/* 新商品の案内ページ（表） */
+dt {
+  padding: 0.5em;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #494949;
+  border-left: solid 5px #7db4e6;
+}
+dd {
+  padding: 1em 0.5em;
+  font-size: 1.2em; 
+  color: #494949;
+}
+.float {
+  float: left;
+  margin-right: 30px;
+}
+
+.product {
+    background: #cccccc;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.item-name {
+    font-weight: bold;
+}

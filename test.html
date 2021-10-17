@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>INIADモール : トップ</title>
+    <link rel="stylesheet" type="text/css" href="/static/signage.css">
+  </head>
+  <body>
+    <h1>INIADモール : トップ</h1>
+    <p>INIADモールへようこそ。</p>
+    <ul>
+      <li><a href="/static/new.html">新商品のご紹介</a></li>
+    </ul>
+
+    <form method="post" action="/purchase">
+      <p>マイバッグはお持ちですか？</p>
+      <div>
+        <input type="radio" name="bag-type" value="none" checked>
+        <label>マイバッグを利用</label>
+      </div>
+      <div>
+        <input type="radio" name="bag-type" value="large">
+        <label>レジ袋(大)を購入 (￥5)</label>
+      </div>
+      <div>
+        <input type="radio" name="bag-type" value="small">
+        <label>レジ袋(小)を購入 (￥3)</label>
+      </div>
+      
+      <p>購入したい商品の個数を入力し、「購入」ボタンを押してください。</p>
+      
+      <div class="product">
+        <p class="item-name">にんじん</p>
+        <p><label>数量:</label>
+          <select name="p001">
+            <option value="0">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </p>
+      </div>
+      
+      <div class="product">
+        <p class="item-name">鶏肉</p>
+        <p><label>数量:</label>
+          <select name="p002">
+            <option value="0">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </p>
+      </div>
+      
+      <div class="product">
+        <p class="item-name">牛乳</p>
+        <p><label>数量:</label>
+          <select name="p003">
+            <option value="0">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </p>
+      </div>
+      
+      <div class="product">
+        <p class="item-name">あじ</p>
+        <p><label>数量:</label>
+          <select name="p004">
+            <option value="0">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </p>
+      </div>
+      
+      <button type="submit">購入</button>
+    </form>
+  </body>
+</html>
